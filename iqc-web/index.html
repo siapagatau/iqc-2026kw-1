@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pembuat IQC Lucu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Ketik di Cini ✍️</h2>
+            <input type="text" id="inputProvider" placeholder="Nama Provider (ex: Telkomsel)" oninput="updateWeb()">
+            <input type="number" id="inputBaterai" placeholder="Sica Bateral (0-100)" oninput="updateWeb()">
+            <textarea id="inputPesan" placeholder="Isi Pecan Chat..." oninput="updateWeb()"></textarea>
+            <button onclick="unduhGambar()">📸 Unduh Gambal</button>
+        </div>
+
+        <div class="preview-box" id="areaFoto">
+            <div class="status-bar">
+                <span id="displayProvider">Telkomsel</span>
+                <span id="displayBaterai">100% 🔋</span>
+            </div>
+            <div class="chat-bubble">
+                <p id="displayPesan">Halo Kakak! Semangat ya bikin webnya! 👶✨</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
